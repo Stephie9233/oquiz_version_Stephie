@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+    height: 100vh;
+    position: relative;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+.body__header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #00BFA6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.body__header--section {
+    width: 45vw;    
+}
+
+.body__header--section-logo {
+    text-decoration: none;
+    font-weight: 900;
+    color: #f1f1f1;
+    font-size: 15vw;
+    font-family: Pacifico;
+    cursor: pointer;
+    margin: auto 0 auto 1rem;
+}
+
+.body__header--section-nav {
+    text-decoration: none;
+    font-weight: 500;    
+}
+
+.body__header--section-nav-ctn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.body__header--section-nav-ctn-line {    
+    list-style-type: none;
+
+}
+
+.body__header--section-nav-ctn-line-link {
+    text-decoration: none;
+    font-size: 5vw;
+    color: #2D2D2D;
+    margin-left: 12vw;
+    font-family: Lato;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.body__footer {
+    width: 100vw;
+    height: 10vh;
+    padding-top: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: Lato;
+    border-top: 1px solid #00BFA6;
+}
+
+.body__footer--text {
+    font-size: 5vw;
+    margin-bottom: .3rem;
+    color: #00BFA6;
+}
+
+.body__footer--subText {
+    font-size: 4vw;
+    font-style: italic;
+}
+
+@media screen and (min-width: 525px) {
+    .body__header--section-logo {
+        font-size: 10vw;
+    }
+
+    .body__header--section-nav-ctn-line-link {
+        font-size: 3.4vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body__header--section-logo {
+        display: flex;
+        align-items: center;
+        margin-top: -1.5rem;
+    }
+    
+    .body__header--section-nav-ctn {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .body__header--section-nav-ctn-line-link {
+        font-size: 2.2vw;
+        margin: 0;
+    }
+}
